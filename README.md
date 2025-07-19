@@ -43,5 +43,4 @@ O layout se adapta automaticamente a:
 2. Abra o arquivo `index.html` em qualquer navegador moderno
 3. Navegue entre as seções usando o menu superior (em páginas internas)
 
-## Licença
-Distribuído sob licença MIT.
+
