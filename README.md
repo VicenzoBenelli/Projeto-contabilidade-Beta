@@ -1,4 +1,4 @@
-# README - Site Lucro em Saltos Altos
+# Projeto de Ciencias Contábeis UFPB- Site Lucro em Saltos Altos
 
 ## Visão Geral
 Site institucional para "Lucro em Saltos Altos", empresa especializada em contabilidade feminina. Design inspirado na Apple com estética minimalista e paleta de cores preto e amarelo/dourado.
