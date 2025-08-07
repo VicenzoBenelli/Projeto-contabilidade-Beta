@@ -242,20 +242,31 @@
       font-size: 1.3rem;
     }
 
-    /* Rodapé estilo Apple */
+    /* Rodapé centralizado */
     footer {
       border-top: 1px solid rgba(255, 255, 255, 0.08);
       padding: 3rem 0;
       margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .footer-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       max-width: 980px;
       margin: 0 auto;
       padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
+      gap: 3rem;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 220px;
+      max-width: 280px;
+      text-align: center;
     }
 
     .footer-column h3 {
@@ -268,6 +279,7 @@
 
     .footer-column ul {
       list-style: none;
+      padding: 0;
     }
 
     .footer-column ul li {
@@ -295,12 +307,17 @@
       color: rgba(245, 245, 247, 0.6);
       font-size: 0.9rem;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
     }
 
     .social-links {
       display: flex;
       gap: 1.2rem;
+      justify-content: center;
+      margin-top: 1rem;
     }
 
     .social-links a {
@@ -315,8 +332,7 @@
     /* Responsividade */
     @media (max-width: 900px) {
       .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 2rem;
       }
     }
 
@@ -336,6 +352,16 @@
       .navbar a {
         padding: 0.7rem 1.2rem;
         font-size: 1rem;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-column {
+        max-width: 100%;
+        width: 100%;
       }
     }
 
@@ -360,10 +386,6 @@
         margin: 0.2rem;
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
-      }
-      
-      .footer-content {
-        grid-template-columns: 1fr;
       }
       
       .footer-bottom {
@@ -396,6 +418,7 @@
     <a href="#missao-page">Missão</a>
     <a href="#visao-page">Visão</a>
     <a href="#valores-page">Valores</a>
+    <a href="#pesquisa-page">Pesquisa Expo</a>
   </nav>
 
   <!-- Página Home -->
@@ -472,7 +495,65 @@
     </ul>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Página Pesquisa Expo -->
+  <section id="pesquisa-page" class="container" style="display: none;">
+    <div class="content-header">
+      <h1>Pesquisa Expo Completa</h1>
+    </div>
+    <div class="content-section">
+      <h2>OBRAS DE TAYLOR:</h2>
+      <p>A Administração Científica é uma escola do pensamento administrativo que propõe a aplicação de métodos científicos à gestão, com o objetivo de aumentar a eficiência industrial. Essa teoria foi desenvolvida por Frederick W. Taylor, com a intenção de solucionar um dos principais problemas enfrentados pelas indústrias no final do século XIX e início do século XX: os desperdícios e as perdas recorrentes durante o processo produtivo, que afetavam diretamente o lucro e a produtividade das organizações.</p>
+
+      <p>A pesquisa de Taylor é tradicionalmente dividida em dois períodos, delimitados pela publicação de suas principais obras. O primeiro corresponde ao lançamento do livro <em>Shop Management</em> (1903), no qual o autor propõe técnicas de racionalização do trabalho, por meio do estudo de tempos e movimentos. Ao analisar as tarefas desempenhadas pelos operários, Taylor identificou que a remuneração salarial, por não ser proporcional à produtividade, gerava desmotivação, comprometendo significativamente o desempenho da produção.</p>
+
+      <p>Em síntese, a obra <em>Shop Management</em> defende que a administração deve buscar, simultaneamente, o aumento da remuneração dos trabalhadores e a redução dos custos unitários de produção. Para alcançar tal objetivo, torna-se fundamental a aplicação de métodos científicos e a padronização dos processos produtivos, promovendo a especialização dos funcionários em tarefas específicas.</p>
+
+      <p>O segundo período da obra de Taylor é marcado pela publicação do livro <em>The Principles of Scientific Management</em> (1911), no qual a Teoria da Administração Científica é sistematizada de forma mais abrangente. Taylor compreende que a especialização do trabalhador só alcança plena eficácia quando acompanhada de uma estrutura organizacional adequada.</p>
+
+      <p>Nessa obra, o autor identifica três falhas recorrentes no ambiente industrial: a chamada “vadiagem sistemática” dos operários — isto é, a prática de reduzir intencionalmente o ritmo de trabalho por receio de punições ou cortes salariais; um sistema de gestão ineficiente, que estimulava a ociosidade como forma de preservação de interesses individuais; e a adoção de métodos empíricos na produção, o que resultava em desperdício de tempo, movimentos e recursos.</p>
+
+      <p>Diante dessas falhas, Taylor propõe a substituição dos métodos empíricos por técnicas fundamentadas no método científico, originando o conceito de Organização Racional do Trabalho (ORT). Essa abordagem baseia-se, principalmente, na análise minuciosa das atividades laborais e no estudo dos tempos e movimentos. O tempo, considerado o principal recurso escasso, passa a ser o foco central da racionalização. Assim, cada tarefa é executada segundo uma sequência padronizada de movimentos, elaborada para eliminar ações desnecessárias e manter apenas aquelas essenciais e eficientes.</p>
+
+      <p>Essa “coreografia” padronizada permite maior controle dos processos e facilita a realização de previsões. Além disso, a divisão do trabalho em etapas específicas possibilita a especialização dos operários, promovendo o aumento da produtividade e a redução de custos.</p>
+
+      <p>Em consonância com Taylor, o engenheiro Frank B. Gilbreth contribuiu para o aperfeiçoamento da Administração Científica ao introduzir o estudo dos tempos e movimentos como técnica essencial à racionalização do trabalho. O objetivo desse estudo era compreender a fadiga humana e atuar em três frentes principais: a eliminação de movimentos inúteis para prevenir o cansaço; a execução econômica dos movimentos úteis sob uma perspectiva fisiológica; e a ordenação adequada das ações realizadas.</p>
+
+      <p>A análise de Gilbreth aproximou-se da teoria de Taylor ao demonstrar que a redução da fadiga resultava no aumento da produtividade e da qualidade do trabalho, além de promover a diminuição do desperdício de tempo, da rotatividade de funcionários, de doenças e de acidentes de trabalho, bem como o aumento da capacidade de esforço. Em resumo, a fadiga é considerada um fator redutor da eficiência.</p>
+
+      <p>Sob a óptica econômica, a Administração Científica baseia-se na concepção do <em>homo economicus</em>, segundo a qual o ser humano é motivado por recompensas econômicas. Por essa razão, propõe-se o uso de incentivos salariais vinculados à produtividade, em substituição ao pagamento por tempo trabalhado. Isso reflete a ideia de que o trabalho é percebido apenas como uma fonte de renda, desconsiderando sua dimensão moral, social e subjetiva na vida do indivíduo.</p>
+
+      <p>Assim, a remuneração por produtividade foi adotada como mecanismo para eliminar a “vadiagem sistemática”, sob a lógica de que, quanto mais o funcionário produzisse, maior seria sua remuneração — dissolvendo, assim, a crença de que o aumento da produção seria, de alguma forma, prejudicial ao trabalhador.</p>
+
+      <p>Apesar dessas propostas, é importante destacar que o objetivo da teoria de Taylor não era apenas o bem-estar do trabalhador, mas principalmente o aumento da lucratividade do empresário por meio da eliminação de desperdícios e da maximização dos resultados. Por isso, embora Taylor seja, por vezes, interpretado como defensor dos operários, sua preocupação principal era com os interesses do capital.</p>
+
+      <p>Alguns aspectos do taylorismo podem ser considerados nocivos ao trabalhador, como a imposição de uma rotina extremamente repetitiva, que pode comprometer a saúde física e mental do operário, além de provocar uma desconexão entre o trabalhador e sua atividade, consequência da elevada especialização que o restringe a apenas uma parte do processo produtivo. Essa fragmentação também simplificou os cargos, permitindo a contratação de mão de obra com baixa qualificação e, consequentemente, salários menores.</p>
+
+      <h2>PRINCÍPIOS DA ADMINISTRAÇÃO CIENTÍFICA:</h2>
+      <p>Taylor propôs quatro princípios para a Administração Científica. O primeiro é o princípio do planejamento, segundo o qual a improvisação deveria ser substituída pela ciência, por meio do planejamento do método de trabalho. O segundo é o princípio do preparo, no qual os trabalhadores devem ser selecionados cientificamente de acordo com suas aptidões e devem ser preparados e treinados, além de se organizar máquinas e equipamentos com um arranjo físico e disposição racional. O terceiro princípio é o do controle, que afirma que o trabalho deve ser monitorado para garantir que está sendo executado de acordo com os métodos estabelecidos e conforme o plano previsto. Por fim, o quarto princípio é o da execução, segundo o qual as atribuições e responsabilidades devem ser distribuídas de forma que a execução do trabalho seja disciplinada.</p>
+
+      <p>Harrington Emerson, ao simplificar os métodos de trabalho, contribuiu para popularizar a Administração Científica e foi um dos primeiros a desenvolver trabalhos sobre seleção e treinamento de empregados. Entre seus princípios de rendimento, destacam-se a importância de traçar um plano bem definido conforme os objetivos; estabelecer o predomínio do bom senso; oferecer orientação e supervisão competentes; manter a disciplina e impor honestidade nos acordos, promovendo justiça social no trabalho; manter registros precisos, imediatos e adequados; oferecer remuneração proporcional ao trabalho; fixar normas padronizadas tanto para as condições quanto para o próprio trabalho e suas operações; estabelecer instruções precisas e fornecer incentivos ao pessoal com o objetivo de aumentar o rendimento e a eficiência.</p>
+
+      <p>Henry Ford, mecânico de formação, projetou um modelo de carro e fundou duas fábricas de automóveis. A primeira foi encerrada, mas a segunda originou a Ford Motor Company. Ford tinha como objetivo vender carros a preços acessíveis, com assistência técnica garantida por meio da produção em massa. Para isso, implementou medidas como o salário mínimo de cinco dólares por dia e a jornada diária de oito horas, em uma época em que o habitual era de dez a doze horas.</p>
+
+      <p>Sua fábrica era integrada, produzindo desde a matéria-prima até o produto final acabado, e possuía uma cadeia de distribuição própria por meio de agências. O sistema de produção implantado por Ford organizava a progressão do produto de forma planejada, ordenada e contínua; o trabalho era entregue ao trabalhador, sem depender de sua iniciativa para buscá-lo; e as operações eram detalhadamente analisadas em seus elementos constituintes.</p>
+
+      <p>Ford desenvolveu três princípios básicos: o princípio de intensificação, que consiste na utilização imediata dos equipamentos e da matéria-prima, e na rápida colocação do produto no mercado; o princípio de economicidade, que visa reduzir ao mínimo o volume de estoque da matéria-prima em transformação, de forma que o automóvel fosse pago à empresa antes do vencimento dos salários e dos pagamentos pela matéria-prima adquirida; e o princípio de produtividade, que busca aumentar a capacidade de produção humana por meio da especialização e da linha de montagem.</p>
+
+      <p>Por fim, Taylor também desenvolveu o princípio da exceção, que estabelece um sistema de controle baseado na verificação das exceções ou desvios em relação aos padrões normais. Os desvios, sejam positivos ou negativos, devem ser identificados e localizados para que sejam tomadas as providências necessárias.</p>
+    
+      <h2>CRÍTICAS À ADMINISTRAÇÃO CIENTÍFICA</h2>
+      <p>A obra de Taylor é passível de críticas devido à época de sua formação, que ofertava pouca experiência industrial e empresarial, ausência de conhecimentos sobre assuntos administrativos e uma mentalidade de preconceitos por parte dos dirigentes e dos empregados. Contudo, é essencial destacar que o mérito dos pioneiros da Teoria da Administração não deve ser reduzido. Nesse sentido, serão abordadas as principais críticas pontuadas pelo autor à Administração Científica.</p>
+      <p>O mecanicismo da Administração Científica é uma crítica central que aborda a percepção do empresário em relação ao trabalhador como parte de um maquinário empresarial, ou seja, como uma peça rígida de uma organização, retirando deste o fator humano de execução. Isso se deve ao fato de a Administração Científica ter se restringido às tarefas e aos fatores diretamente relacionados com o cargo e a função do operário, sem levar em consideração as necessidades pessoais por trás da atividade. Por esse motivo, essa teoria também é conhecida como "teoria da máquina".</p>
+      <p>A busca pelo método que possibilitasse a máxima eficiência e rentabilidade possível defende o salário e o pagamento de incentivos como uma motivação, considerando o trabalhador como “homem econômico", aquele que visa maximizar seus lucros, independentemente de fatores como exaustão física e mental advindos de uma repetição mecânica. Tal percepção passou a representar a desumanização do trabalho nas indústrias.</p>
+      <p>Nesse sentido, outro tópico problemático da teoria a se pontuar é a superespecialização do operário, advinda da busca pela eficiência pautada na premissa de que, quanto mais se divide e subdivide a realização de uma atividade, mais eficiente e padronizada ela será, o que beneficia a geração de lucros, mas, por consequência, compromete a autonomia dos empregados e o aprendizado da situação total em cada nível.</p>
+      <p>Os benefícios seriam a redução de atribuições para funcionários, bem como para chefes que se especializariam em suas atribuições. Atividades mais simples são mais fáceis de serem ensinadas e fiscalizadas. Essa forma de organização das tarefas priva os operários da satisfação no trabalho e viola a dignidade humana para o autor.</p>
+      <p>O taylorismo constatou que a maneira espontânea com que os funcionários exerciam suas atribuições era a menos econômica e a menos segura. Contudo, posteriormente, chegou-se à conclusão de que qualquer aumento na especialização não resulta necessariamente em um acréscimo de eficiência.</p>
+      <p>A visão microscópica do homem também é destacada como crítica, tendo em vista que ignora o homem como ser sociável, ao percebê-lo apenas de modo individual e negativista, ao exaltar características como preguiça e ineficiência. Para Taylor, era necessário enrijecer métodos de execução para conter a falta de capacidade humana de aderir a uma metodologia determinada como ideal, quando a realidade refletia o impasse das expectativas irreais dos empresários sobre os trabalhadores, que geravam a falsa percepção de ineficiência ou contrariedade aos ideais organizacionais previamente determinados pela gestão.</p>
+      <p>O esquema estabelecido resulta na crescente oferta de trabalho desqualificado e alienante, que existe simultaneamente com uma estrutura administrativa monocrática, na qual a obediência é valorizada. Além dessas três principais críticas, temáticas como a ausência de comprovação científica, abordagem incompleta da organização, limitação do campo de aplicação, abordagem prescritiva e normativa e a abordagem de sistema fechado foram citadas pelo autor como pontos negativos da Teoria Científica da Administração.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé Centralizado -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
@@ -482,16 +563,7 @@
           <li><a href="#missao-page">Missão</a></li>
           <li><a href="#visao-page">Visão</a></li>
           <li><a href="#valores-page">Valores</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-column">
-        <h3>Serviços</h3>
-        <ul>
-          <li><a href="#">Contabilidade</a></li>
-          <li><a href="#">Consultoria</a></li>
-          <li><a href="#">Planejamento Financeiro</a></li>
-          <li><a href="#">Treinamentos</a></li>
+          <li><a href="#pesquisa-page">Pesquisa Expo</a></li>
         </ul>
       </div>
       
